@@ -1,0 +1,25 @@
+#!/bin/bash
+# By ALK-NET
+
+ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-20 )
+CITY=$(curl -s ipinfo.io/city )
+WKT=$(curl -s ipinfo.io/timezone )
+IP=$(curl -s ipinfo.io/ip )
+RG=$(curl -s ipinfo.io/region )
+NG=$(curl -s ipinfo.io/country )
+
+
+
+echo -e "---------------------------------------------------"
+echo -e "|           IP CHECKING by ALK-NET                |"
+echo -e "---------------------------------------------------"
+echo -e "| IP        : ${IP}                               "
+echo -e "| Provider  : ${ISP}                              "
+echo -e "| Kota      : ${CITY}                             "
+echo -e "| Region    : ${RG}                               "
+echo -e "| Negara    : ${NG}                               "
+echo -e "| Zona      : ${WKT}                              "
+echo -e "---------------------------------------------------"
+echo -e "|             Created by ALK-NET                  |"
+echo -e "---------------------------------------------------"
+
