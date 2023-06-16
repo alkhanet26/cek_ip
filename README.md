@@ -1,5 +1,5 @@
 # CEK IP
 
 ```
-cd /sbin && wget -O "https://raw.githubusercontent.com/alkhanet26/cekip/cekip" && chmod +x /sbin/cekip
+wget "https://raw.githubusercontent.com/alkhanet26/cekip/cekip" -O /sbin/cekip && chmod +x /sbin/cekip
 ```
